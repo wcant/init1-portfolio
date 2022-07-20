@@ -1,3 +1,22 @@
+:root {
+  /* highlight */
+  --bright-red: #ff0b31;
+  --bright-purple: #a91bde;
+  --bright-blue: #2a2af5;
+  --lighter-blue: #1ba4de;
+  --light-green: #1dfa70;
+  --neon-yellow: #e5f511;
+  --rusty-orange: #f5b042;
+  --darker-rust: #ec633a;
+  /* layout */
+  --dark-slate-gray: #384d48;
+  --feldgrau: #53605d;
+  --nickel: #6e7271;
+  --laurel-green: #acad94;
+  --lighter-gray: #d8d4d5;
+  --lighterer-gray: #e2e2e2;
+}
+
 html,
 body {
   padding: 0;
@@ -8,11 +27,30 @@ body {
   font-size: 16px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
 h4 {
   margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
 }
 
 a {
@@ -21,8 +59,14 @@ a {
   cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
+.App {
+  max-width: 700px;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+section {
+  margin: 3rem 0;
 }
 
 nav {
@@ -30,7 +74,6 @@ nav {
   align-items: center;
   font-size: 1.1rem;
   min-height: 45px;
-  background-color: #525e65;
 }
 
 nav ul {
@@ -41,9 +84,6 @@ nav ul {
 
 main {
   margin: 0 auto;
-  padding: 4rem 0;
-  flex: 1;
-  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +95,7 @@ main {
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid whitesmoke;
+  border-top: 1px solid lightslategray;
   justify-content: center;
   align-items: center;
   margin-top: auto;

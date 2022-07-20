@@ -12,7 +12,7 @@ export default function Footer() {
         Powered by{" "}
         <span className="logo">
           <Image
-            src="/static/imagesvercel.svg"
+            src="/static/images/vercel.svg"
             alt="Vercel Logo"
             width={72}
             height={16}

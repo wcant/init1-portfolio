@@ -34,7 +34,8 @@
 /* ------------------- */
 
 .jobTitle {
-  font-weight: 500;
+  color: var(--darker-rust);
+  font-weight: 300;
 }
 
 .repo--small_text {

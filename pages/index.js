@@ -2,20 +2,31 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import Intro from "../components/Intro";
-import RepoList from "../components/RepoList";
+import FeaturedRepos from "../components/FeaturedRepos";
 
 export default function Home({ data }) {
   return (
     <div className={styles.container}>
-      <Intro />
-      <RepoList repos={data} />
+      <section>
+        <Intro styles={styles} />
+      </section>
+      <section>
+        <h2>Github</h2>
+        <FeaturedRepos repos={data} />
+      </section>
+      <section>
+        <h2>Figma→Code</h2>
+      </section>
+      <section>
+        <h2>Snippets</h2>
+      </section>
     </div>
   );
 }
 
 export async function getStaticProps() {
   // ** this entire block of code is temporaryish
-  // i'm using mock data to avoid making tons of API calls during dev
+  // Using mock data to avoid making tons of API calls at this point
 
   // const res = await fetch("https://api.github.com/users/wcant/repos");
   // const repos = await res.json();
@@ -26,7 +37,7 @@ export async function getStaticProps() {
   // Returning data as props
   // Saving only the info I want to the data array
   // id, name, html_url, description, pushed_at, languages_url
-  const data = [];
+  let data = [];
 
   // Have to fetch the languages from the language_url
   // add other info to data since I have to loop here anyway

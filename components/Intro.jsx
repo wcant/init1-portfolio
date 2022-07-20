@@ -1,10 +1,11 @@
 import React from "react";
+import styles from "../styles/Home.module.css";
 
 export default function Intro() {
   return (
     <div>
       <h1>Wes Cantrell</h1>
-      <h2>Junior Web Developer</h2>
+      <h2 className={styles.jobTitle}>Junior Web Developer</h2>
       <p>**Filler text not final** Starting my web dev career.</p>
       <p>Previous Work:</p>
       <ul>

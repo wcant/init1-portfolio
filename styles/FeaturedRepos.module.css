@@ -12,9 +12,12 @@
 .repoCard {
   width: 45%;
   padding: 5px 10px;
-  background-color: #525e65;
+  /* background-color: #525e65; */
   border-radius: 10px;
-  border: 1px solid #ec633a;
+  border: 2px solid var(--bright-blue);
+}
+.repoCard p {
+  color: whitesmoke;
 }
 
 .repoCard ul {
@@ -22,25 +25,15 @@
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  width: 100%;
+  padding-inline-start: 0px;
 }
 
 .repoCard ul li {
-  margin: 0 8px;
+  margin: 0 4px;
 }
 
-.repoCard li::marker {
-  color: red;
-  content: "►";
-}
-
-/* .repoCard li::before {
-
-  content: "• ";
-  font-size: 1.5rem;
-  color: red;
-} */
-
-.repoCard h3 {
-  font-size: 1rem;
+.repoCard li span {
+  margin: 0 1px;
 }
